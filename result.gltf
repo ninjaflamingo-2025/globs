@@ -1,0 +1,190 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.2.cf7d3637)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_volume",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24444,
+            "type": "VEC3",
+            "max": [
+                0.022225458174943925,
+                0.01991751790046692,
+                0.015103127807378769
+            ],
+            "min": [
+                -0.024601081386208535,
+                -0.000055977419833652678,
+                -0.011914110742509365
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24444,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24444,
+            "type": "VEC2",
+            "max": [
+                0.8996397256851196,
+                0.4215065836906433
+            ],
+            "min": [
+                0.042076513171195987,
+                0.03557246923446655
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 24444,
+            "type": "SCALAR",
+            "max": [
+                24443
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 879984,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 293328,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 293328,
+            "byteLength": 293328,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 586656,
+            "byteLength": 195552,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 782208,
+            "byteLength": 97776,
+            "target": 34963
+        }
+    ],
+    "images": [
+        {
+            "name": "humveetexture.png",
+            "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAA5ElEQVR4nO2asQ3CQBAEz4giXAg90AH1UIU7gMRESGQEhLRANU8RF8xY3slXPxpd+NNtuY5qsNzfnXldzqfWvn7f1vzQe337JIDAASUBBA4oCSBwQEkAgQNKAggcUBJA4ICSAAIHlOPr+Wm9/1jX1n6eZzTA7i8gAQQOKAkgcEBJAIEDSgIIHFASQOCAkgACB5QEEDigTGOM1v+ArbP7C0gAgQNKAggcUBJA4ICSAAIHlAQQOKAkgMABJQEEDigJIHBASQCBA0oCCBxQEkDggJIAAgeUBBA4oCSAwAElAQQOHFX1B6ZTEBKLt0+SAAAAAElFTkSuQmCC"
+        }
+    ],
+    "materials": [
+        {
+            "name": "Material",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.4000000059604645
+            }
+        },
+        {
+            "name": "material"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "humvee.001",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "humvee.001",
+            "matrix": [
+                100.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                100.0,
+                0.000004371138857095502,
+                0.0,
+                0.0,
+                -0.000004371138857095502,
+                100.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "source": 0,
+            "sampler": 0
+        }
+    ],
+    "scene": 0
+}
