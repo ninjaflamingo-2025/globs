@@ -1,14 +1,5 @@
-class Asset {
-  constructor(name, path, data, loader){
-    this.name = name
-    this.path = path 
-    this.data = data
-    this.loader = loader
-  }
-}
-
 class AssetManager extends EventTarget {
-  constructor(asset_store){
+  constructor(asset_store, loaders){
     super()
     this.asset_store = asset_store
     this.state = new Proxy(
@@ -38,18 +29,21 @@ class AssetManager extends EventTarget {
       }
     );
     this.assets = []
-    this.loaders = {
+    this.loaders = loaders
+    /*
+     {
       cube_texture_loader: new THREE.CubeTextureLoader(),
       gltfl_loader: new GLTFLoader(),
       texture_loader: new THREE.TextureLoader()
     }
+    */
   }
   
   add(asset){
     const count = this.assets.push(asset);
     this.state.total = count 
   }
-  
+  // only objects with geometries can have a bounding box
   loadAsset(asset){
     const { asset_store } = this
     if (!asset_store) {
